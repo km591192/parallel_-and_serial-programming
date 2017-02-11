@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1480372540 source:d:\onu\паралел-ые+послед-ые вычисления\test\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<iostream>
+	<string>
+	<vector>
+	<ctime>
+	<sstream>
+	<omp.h>
+

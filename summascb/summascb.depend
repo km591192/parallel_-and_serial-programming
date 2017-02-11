@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1473961619 source:d:\onu\паралел-ые+послед-ые вычисления\summascb\main.cpp
+	<iostream>
+	<omp.h>
+	<time.h>
+	<stdlib.h>
+	<conio.h>
+	<ctime>
+	<time.h>
+

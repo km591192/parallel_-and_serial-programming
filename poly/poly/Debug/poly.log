@@ -1,0 +1,53 @@
+﻿Сборка начата 21/10/2016 14:04:41.
+     1>Проект "F:\паралел-ые+послед-ые вычисления\poly\poly\poly.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt poly.cpp
+         poly.cpp
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(50): warning C4018: <=: несоответствие типов со знаком и без знака
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(53): warning C4018: <=: несоответствие типов со знаком и без знака
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(61): warning C4018: <=: несоответствие типов со знаком и без знака
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(97): warning C4018: <=: несоответствие типов со знаком и без знака
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(102): warning C4018: <=: несоответствие типов со знаком и без знака
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(114): warning C4018: <=: несоответствие типов со знаком и без знака
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(163): warning C4018: <: несоответствие типов со знаком и без знака
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(204): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(209): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(214): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(215): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(221): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(226): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(227): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(233): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(238): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(239): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(296): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(298): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(309): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(310): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(316): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(317): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(323): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(324): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(330): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(331): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(340): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(341): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(347): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(348): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(354): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(355): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(361): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(362): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(371): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(372): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(378): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(379): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>f:\паралел-ые+послед-ые вычисления\poly\poly\poly.cpp(388): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\паралел-ые+послед-ые вычисления\poly\Debug\poly.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\паралел-ые+послед-ые вычисления\poly\Debug\poly.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\паралел-ые+послед-ые вычисления\poly\Debug\poly.lib" /MACHINE:X86 Debug\poly.obj
+         poly.vcxproj -> F:\паралел-ые+послед-ые вычисления\poly\Debug\poly.exe
+     1>Сборка проекта "F:\паралел-ые+послед-ые вычисления\poly\poly\poly.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:03.38

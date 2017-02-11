@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1474664489 source:d:\onu\паралел-ые+послед-ые вычисления\summasvibcb\main.cpp
+	<iostream>
+	<omp.h>
+	<math.h>
+

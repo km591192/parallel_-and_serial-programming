@@ -1,0 +1,144 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <ctime>
+#include <sstream>
+#include <omp.h>
+
+using namespace std;
+int a[100000000], b[100000000];
+string ret;
+string multiply(string num1, string num2) {
+
+	double t0 = omp_get_wtime();
+	int s1(num1.size()), s2(num2.size()), size(s1 + s2);
+	vector<int> digit(size, 0), carry(size, 0);  
+	for (int i = 0; i < s1; ++i){
+		for (int j = 0; j < s2; ++j){
+			int mul = num1[s1 - 1 - i] - '0';
+			int muled = num2[s2 - 1 - j] - '0';
+			int tmp = mul*muled;
+			digit[size - 1 - i - j] += tmp % 10;  
+			carry[size - 1 - i - j - 1] += tmp / 10;  
+		}
+	}
+	int carrFlag(0);  
+	for (int i = size - 1; i >= 0; --i){  
+		int sum = digit[i] + carry[i] + carrFlag;
+		ret.insert(ret.begin(), 1, '0' + sum % 10);  
+		carrFlag = sum / 10; 
+	}
+	int pos(0);
+	while (ret[pos] == '0')  ++pos; 
+	if (pos >= size)    return "0";   
+
+	double t1 = omp_get_wtime();
+	printf("time for 1 core is  %.3f s \n", t1 - t0);
+	return ret.substr(pos);
+}
+
+string ret1;
+string multiplypar(string num1, string num2) {
+	int s1(num1.size()), s2(num2.size()), size(s1 + s2);
+	vector<int> digit(size, 0), carry(size, 0);
+	double t0 = omp_get_wtime();
+	omp_set_num_threads(2);
+#pragma omp parallel for
+		for (int i = 0; i < s1; ++i){
+			for (int j = 0; j < s2; ++j){
+				int mul = num1[s1 - 1 - i] - '0';
+				int muled = num2[s2 - 1 - j] - '0';
+				int tmp = mul*muled;
+				digit[size - 1 - i - j] += tmp % 10;
+				carry[size - 1 - i - j - 1] += tmp / 10;
+			}
+		}
+
+	int carrFlag(0); 
+	int sum = 0;
+		for (int i = size - 1; i >= 0; --i){
+			sum = digit[i] + carry[i] + carrFlag;
+			ret1.insert(ret1.begin(), 1, '0' + sum % 10);
+			carrFlag = sum / 10;
+		}
+		double t1 = omp_get_wtime();
+		printf("time for x core is  %.3f s \n", t1 - t0);
+	int pos(0);
+	while (ret1[pos] == '0')  ++pos;
+	if (pos >= size)    return "0";
+
+	return ret1.substr(pos);
+}
+/*string int_array_to_string(int int_array[], int size_of_array) {
+	string returnstring = "";
+	for (int temp = 0; temp < size_of_array; temp++)
+		returnstring += itoa(int_array[temp]);
+	return returnstring;
+}*/
+string int_array_to_string(int int_array[], int size_of_array) {
+	ostringstream oss("");
+#pragma omp parallel for
+	for (int temp = 0; temp < size_of_array; temp++)
+		oss << int_array[temp];
+	return oss.str();
+}
+void inita(int n)
+{
+	//	time_t t;
+	//	srand(1);
+	time_t t;
+	srand((unsigned)time(&t));
+
+	cout << "Array: " << endl;
+	for (int i = 0; i<n; i++)
+	{
+		a[i] = rand() % 10;
+		//cout << " " << a[i];
+	}
+	cout << endl;
+
+	return;
+}
+void initb(int n)
+{
+	//	time_t t;
+	//	srand(1);
+	time_t t;
+	srand((unsigned)time(&t));
+
+	cout << "Array: " << endl;
+	for (int i = 0; i<n; i++)
+	{
+		b[i] = rand() % 10;
+		//cout << " " << b[i];
+	}
+	cout << endl;
+
+	return;
+}
+
+int main()
+{
+	string str1, str2;
+	int n, m;
+	cout << "Enter n" << endl;
+	cin >> n;
+	inita(n);
+	cout << "Enter m" << endl;
+	cin >> m;
+	initb(m);
+	str1=int_array_to_string(a,n);
+	str2 = int_array_to_string(b, m);
+	string res = multiply(str1, str2);
+	string respar = multiplypar(str1, str2);
+	cout << res << endl;
+	cout << "\n\nparallel\n";
+	cout << respar << endl;
+	system("pause");
+	return 0;
+}
+
+
